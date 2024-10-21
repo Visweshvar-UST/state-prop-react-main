@@ -29,7 +29,7 @@ const DeliveryStatus: React.FC<DeliveryStatusProps> = ({ isTruckLeft, NumTruckLe
             onChange={(e) => setDispatchAmount(parseInt(e.target.value) || 0)}
             min="1"
             max={warehouseItems} // Optional: Cap the maximum input to the available stock
-          />
+          /> <br />
           <button onClick={handleDispatchClick}>Dispatch Truck</button>
         </>
       )}
